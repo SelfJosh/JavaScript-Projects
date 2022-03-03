@@ -4,12 +4,12 @@ function button() {                                         //Defining a functio
                                                             //a string value
     document.getElementById("text").innerHTML = str1 + str2;       //Putting the value
 }                                                           //of the variable
-                                                            //with the "text" i
+                                                            //with the "text" iD
 
 
 
-function Funct2() {
-    var sentence = "I am learning ";
-    sentence += "a lot from this course!";
-    document.getElementById("Concatenate").innerHTML = sentence;
+function Funct2() {     //Defining a function with a name
+    var sentence = "I am learning ";    //Assigning a variable with a string
+    sentence += "a lot from this course!"; // Concatenating the variable with another string
+    document.getElementById("Concatenate").innerHTML = sentence; // Putting the value of the variable where the "Concatenate" ID is
 }
