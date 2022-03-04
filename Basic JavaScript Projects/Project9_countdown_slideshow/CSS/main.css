@@ -1,0 +1,105 @@
+*{box-sizing: border-box;}
+body {margin: 0;}
+img {vertical-align: middle}
+
+/* Slideshow Container */
+.slideshowContainer {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+  }
+/* End Slideshow Container */
+
+/* Hides Images by default */
+.mySlides {
+    display: none;
+}
+
+/* Hides Images by default */
+
+/* Prev/Next */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next{
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/* End Prev/Next */
+
+/*Caption*/
+.Text{
+    color: gainsboro;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Numbers */
+.number {
+    color: gainsboro;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+/* End Numbers */
+
+/* Rectangles */
+.Rectangles {
+    cursor: pointer;
+    height: 25px;
+    width: 45px;
+    margin: 0 2px;
+    
+    background-color: rgb(78, 73, 73);
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .Rectangles:hover {
+    background-color: rgb(207, 207, 207);
+}
+/* End Rectangles*/
+
+/* Fade */
+.Fade {
+    -webkit-animation-name: Fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: Fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes Fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+
+@keyframes Fade {
+    from {opacity: .4;}
+    to {opacity: 1;}
+}
+/* End Fade */
+
+@media only screen and (max-width: 300px){
+    .prev, .next, .Text {font-size: 11px;}
+}

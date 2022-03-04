@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="./JS/main.JS"></script>
+        <link rel="stylesheet" href="./CSS/main.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    </head>
+    <body>
+
+        <!--SlideShoe container-->
+        <div class="slideshowContainer">
+
+            <!--Images/text/Numbers-->
+            <div class="mySlides fade"> 
+                <div class="number">1 / 3</div>
+                <img src="./Images/photo1.jpg" style="width: 100%;">
+                <div class="Text">Beauty in the Dark</div>
+            </div>           
+
+            <div class="mySlides fade"> 
+                <div class="number">2 / 3</div>
+                <img src="./Images/photo2.jpg" style="width: 100%;">
+                <div class="Text">Beauty in the Dark</div>
+            </div>
+
+            <div class="mySlides fade"> 
+                <div class="number">3 / 3</div>
+                <img src="./Images/photo3.jpg" style="width: 100%;">
+                <div class="Text">Beauty in the Dark</div>
+            </div>
+
+            <!--End Images/text/Number-->
+
+            <!--Prev/Next-->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a> 
+            <!--End Prev/Next-->   
+        </div>
+        <br>
+        <!--End Slideshow Container-->
+
+        <!--Rectangles-->
+        <div style="text-align:center;">
+            <span class="Rectangles" onclick="currentSlide(1)"></span>
+            <span class="Rectangles" onclick="currentSlide(2)"></span>
+            <span class="Rectangles" onclick="currentSlide(3)"></span>
+        </div>
+        <!--Rectangles-->
+        <h1>Click a Rectangle for an Image</h1>
+
+        <p>How many seconds would you like to set your alarm for?</p>
+        <input id="Seconds" value="" type="number" >
+        <button onclick="countdown()">Click here to start</button>
+        <p id="timer"></p>
+    </body>
+</html>
